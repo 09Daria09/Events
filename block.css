@@ -1,0 +1,46 @@
+#block {
+    width: 400px;
+    max-width: 90%;
+    min-height: 200px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    overflow: auto;
+    position: relative;
+    resize: both;
+}
+
+#block p {
+    margin: 0;
+}
+
+#block .resize-handle {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    cursor: nwse-resize;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#block .resize-handle::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
